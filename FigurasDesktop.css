@@ -1,0 +1,46 @@
+header{
+    max-width: 98%;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.calculation-square,
+.calculation-triangle,
+.calculation-circle,
+.calculation-triangleIsosceles {
+    width: 99%;
+    max-width: 450px;
+}
+
+.calculation-circle {
+    order: 2;
+    height: 400px;
+}
+.calculation-square {
+    order: 1;
+    height: 400px;
+}
+.calculation-triangle {
+    order: 3;
+    height: 730px;
+}
+.calculation-triangleIsosceles {
+    order: 4;
+    height: 730px;
+}
+
+.calculation-square h2 {
+    height: 88px;
+}
+.calculation-square form label {
+    margin-bottom: 30px;
+}
+
+.calculation-triangleIsosceles input {
+    margin: 20px 0 40px 0;
+}

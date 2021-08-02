@@ -1,0 +1,132 @@
+:root {
+    --cube-blue: #4a90e2;
+    --line-grey: #979797;
+    --shadow-grey: #f4f4f4;
+    --just-white: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Zilla Slab', serif;
+}
+
+header {
+    width: 100%;
+    max-width: 750px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 2px var(--line-grey) dashed;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-family: 'Space Mono', monospace;
+    color: var(--just-white);
+    background-color: var(--cube-blue);
+    margin: 0 5px;
+}
+header p {
+    background-color: var(--cube-blue);
+    color: var(--just-white);
+    padding: 20px 10px;
+    margin: 0 5px;
+
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculation-square,
+.calculation-triangle,
+.calculation-circle,
+.calculation-triangleIsosceles {
+    width: 99%;
+    max-width: 750px;
+    min-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    margin: 2px 2px 20px 2px;
+    border: 1px var(--line-grey) dashed;
+    border-width: 2px;
+}
+.calculation-square h2,
+.calculation-triangle h2,
+.calculation-circle h2,
+.calculation-triangleIsosceles h2 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cube-blue);
+    text-align: center;
+    color: var(--just-white);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+.calculation-square form label,
+.calculation-triangle label,
+.calculation-circle label,
+.calculation-triangleIsosceles label {
+    display: inline-flex;
+    min-width: 320px;
+    max-width: 600px;
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    background-color: var(--shadow-grey);
+    margin-bottom: 15px;
+}
+.calculation-square form,
+.calculation-triangle form,
+.calculation-circle form,
+.calculation-triangleIsosceles form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculation-square form input,
+.calculation-triangle form input,
+.calculation-circle form input,
+.calculation-triangleIsosceles input {
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1.5px dashed var(--cube-blue);
+    margin-bottom: 15px;
+}
+.calculation-square form button,
+.calculation-triangle button,
+.calculation-circle button,
+.calculation-triangleIsosceles button {
+    width: 90%;
+    height: 30px;
+    background-color: var(--shadow-grey);
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+}
+
+.calculation-square form button:hover,
+.calculation-triangle form button:hover,
+.calculation-circle form button:hover,
+.calculation-triangleIsosceles form button:hover {
+    color: rgb(26, 25, 25);
+    box-shadow: 2px 2px 2px 1px rgba(43, 42, 42, 0.2);
+}
+
