@@ -1,0 +1,143 @@
+:root {
+    --yellow-coin: #f1a700;
+    --line-grey: #979797;
+    --shadow-grey: #f4f4f4;
+    --just-white: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Zilla Slab', serif;
+}
+
+header {
+    height: auto;
+    max-width: 99%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 2px var(--line-grey) dashed;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    color: var(--just-white);
+    background-color: var(--yellow-coin);
+    margin: 0 5px;
+    letter-spacing: -2px;
+}
+header p {
+    background-color: var(--yellow-coin);
+    color: var(--just-white);
+    padding: 20px 10px;
+    margin: 0 5px;
+}
+
+section {
+    width: 99%;
+    height: 100%;
+    max-width: 700px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    margin: 0 auto;
+    border: 1px var(--line-grey) dashed;
+    border-width: 2px;
+}
+section h2 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--yellow-coin);
+    text-align: center;
+    color: var(--just-white);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+section form .Price-label {
+    display: inline-block;
+    max-width: 480px;
+    min-width: 350px;
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    background-color: var(--shadow-grey);
+    margin-bottom: 15px;
+}
+section form .Discount-label {
+    display: inline;
+    max-width: 240px;
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--shadow-grey);
+    margin-bottom: 15px;
+}
+
+section form input {
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1.5px dashed var(--line-grey);
+    margin: 0 0 15px 10px;
+}
+
+section form select {
+    display: inline;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border: 1.5px solid var(--line-grey);
+    margin: 15px 15px;
+    background-color: var(--just-white);
+}
+section form button {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    min-width: 350px;
+    height: 40px;
+    background-color: var(--shadow-grey);
+    border: 1.5px solid var(--line-grey);
+    align-self: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+    margin: 10px auto;
+}
+section form button:hover {
+    color: rgb(26, 25, 25);
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(43, 42, 42, 0.2);
+}
+
+section form p {
+    display: block;
+    max-width: 650px;
+    min-width: 350px;
+    height: 50px;
+    border: 1.5px dashed var(--line-grey);
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
