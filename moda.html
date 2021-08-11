@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./moda.css">
+    <title>Promedio, mediana y moda</title>
+</head>
+<body>
+    <header>
+        <h1>Promedio, mediana y moda</h1>
+        <p>Tercer taller del curso práctico de JS</p>
+    </header>
+    <main>
+        <section class="promedio-section">
+            <h2>Calcula el promedio</h2>
+            <form class="promedio-section_form">
+                <label for="inputPromedio">
+                    Introduce tu lista de números
+                </label>
+                <input type="number" id="inputPromedio">
+                <input type="number" id="inputPromedio2">
+                <input type="number" id="inputPromedio3">
+                <input type="number" id="inputPromedio4">
+                <button type="button" onclick="CalcularPromedio()">
+                    Calcular Promedio
+                </button>
+                <p id="ResultP"></p>
+            </form>
+        </section>
+
+        <section class="mediana-section">
+            <h2>Calcula la mediana</h2>
+            <form class="mediana-section_form">
+                <label for="inputMediana">
+                    Introduce tu lista de números
+                </label>
+                <input type="number" id="inputMediana">
+                <input type="number" id="inputMediana2">
+                <input type="number" id="inputMediana3">
+                <input type="number" id="inputMediana4">
+                <button type="button" onclick="CalcularMedi()">
+                    Calcular mediana
+                </button>
+                <p id="ResultM"></p>
+            </form>
+        </section>
+
+        <section class="moda-section">
+            <h2>Calcula la moda</h2>
+            <form class="promedio-section_form">
+                <label for="inputModa">
+                    Introduce tu lista de números
+                </label>
+                <input type="number" id="inputModa">
+                <input type="number" id="inputModa2">
+                <input type="number" id="inputModa3">
+                <input type="number" id="inputModa4">
+                <button type="button" onclick="CalcularMod()">
+                    Calcular moda
+                </button>
+                <p id="ResultMo"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="./moda.js"></script>
+</body>
+</html>

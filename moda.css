@@ -1,0 +1,134 @@
+:root {
+    --baby-blue: #c9e6fa;
+    --text-gray: #999999;
+    --text: #000027;
+    --pro-color: #fff5f1;
+    --medi-color: #f6fdfd;
+    --moda-color: hsl(84, 86%, 91%);    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--baby-blue);
+    width: 100%;
+    height:  200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: var(--text);
+}
+header p {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 10px;
+    color: #4f4f5e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+main .promedio-section,
+.mediana-section,
+.moda-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 0 20px 0;
+    background-color: var(--pro-color);
+    border-radius: 10px;
+    border: rgb(219, 166, 175) 0.5px solid;
+
+}
+
+.mediana-section {
+    background-color: var(--medi-color);
+    border: rgb(158, 226, 220) 0.5px solid;
+
+}
+.moda-section {
+    background-color: var(--moda-color);
+    border: rgb(108, 230, 148) 0.5px solid;
+
+}
+
+main .promedio-section h2,
+.mediana-section h2,
+.moda-section h2
+ {
+    font-size: 3rem;
+    padding: 15px;
+    color: var(--text);
+}
+main .promedio-section form label,
+.mediana-section form label,
+.moda-section form label {
+    display: block;
+    font-size: 2rem;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+}
+
+main .promedio-section form input,
+.mediana-section form input,
+.moda-section form input {
+    width: 70%;
+    height: 30px;
+    margin: 5px;
+    border: var(--text-gray) solid 1px;
+    border-radius: 3px;
+}
+
+main .promedio-section form button,
+main .mediana-section form button,
+main .moda-section form button {
+    width: 50%;
+    height: 30px;
+    color: rgb(61, 61, 61);
+    margin: 10px 0;
+}
+
+main .promedio-section form button:hover
+main .mediana-section form button:hover
+main .moda-section form button:hover {
+    color: var(--text);
+}
+
+main .promedio-section form p,
+.mediana-section form p,
+.moda-section form p {
+    display: block;
+    width: 70%;
+    height: 70px;
+    border: var(--text-gray) solid 1px;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 2rem;
+}
