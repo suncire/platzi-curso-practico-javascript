@@ -77,7 +77,7 @@ function CalcularPromedio() {
     const inputP3 = document.getElementById('inputPromedio4');
     const value3 = parseInt(inputP3.value);
 
-    const promedio = CalcularMediaAritmetica(value, value1, value2, value3);
+    const promedio = CalcularMediaAritmetica([value, value1, value2, value3]);
     const resultP = document.getElementById("ResultP");
     resultP.innerText = "Tu promedio es de " + promedio;
 }
